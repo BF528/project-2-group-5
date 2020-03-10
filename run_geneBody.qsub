@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#$ -P bf528
+#$ -cwd
+#$ -V
+#$ -j y
+#$ -pe mpi_16_tasks_per_node 16
+
+echo "Running job $JOB_ID"
+echo "Started: $(date +%F)"
+echo "Running in directory: $PWD"
+
+# your commands here
+
+geneBody_coverage.py -r /project/bf528/project_2/reference/annot/mm9.bed -i ../P0_1_tophat/accepted_hits.bam -o output
+
+echo "Job finished: $(date +%F)"
