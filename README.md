@@ -29,4 +29,4 @@ run_genebody.qsub: runs geneBody_Coverage.py
 
 analysis.R: takes differential expression output from cuffdiff and outputs the up-regulated and down-regulated signficant genes in text files
 
-biologist.rmd: plots FPKM values of differentially expressed genes, compares DAVID analysis results, and creates clustered heatmap 
+biologist.Rmd: plots FPKM values of differentially expressed genes, compares DAVID analysis results, and creates clustered heatmap 
