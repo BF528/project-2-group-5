@@ -13,6 +13,8 @@ Biologist: Evie Wan
  
 # Repository Contents
 
+bf528_project2_group5.pdf: complete report 
+
 run_extract: extracts the SRA format to FASTQ (paired-end sequenceing)
 
 run_cufflinks.qsub: runs differential expression analysis in accepted_hits.bam
